@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple grocery list using Ruby on Rails.
 
-Things you may want to cover:
+# Running project
 
-* Ruby version
+## With Docker
 
-* System dependencies
+- setup database: `docker-compose run --rm web rake db:migrate`
+- setup and run: `docker-compose run --build`
 
-* Configuration
+## Without Docker
 
-* Database creation
+- install dependencies: `bundle install`
+- setup database: `rake db:migrate`
+- start application: `rails server`
 
-* Database initialization
+# What can you find here?
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Ruby on rails.
+- Materialize-sass.
+- Docker & docker-compose.
