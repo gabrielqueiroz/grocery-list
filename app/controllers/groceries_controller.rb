@@ -2,6 +2,11 @@ class GroceriesController < ApplicationController
 
   def index
     @groceries = Grocery.all
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @groceries }
+    end
   end
 
   def new
