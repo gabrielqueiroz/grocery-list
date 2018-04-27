@@ -1,9 +1,15 @@
 <h3> My Grocery List </h3>
 
 <ul class="collection">
-<% @groceries.each do |grocery| %>
-  <li class="collection-item"><%= grocery.name %> - <%= grocery.quantity %></li>
-<% end %>
+  <% if @groceries.blank? %>
+    <li class="collection-item"> Start adding items to your grocery </li>
+  <% end %>
+  <% @groceries.each do |grocery| %>
+    <li class="collection-item">
+      <%= grocery.name %> - <%= grocery.quantity %>
+      <%= link_to 'Destroy', grocery_path(grocery), method: :delete, data: { confirm: 'Remove item from grocery list?' }, class: 'right' %>
+    </li>
+  <% end %>
 </ul>
 
 <%= link_to 'New', new_grocery_path %>

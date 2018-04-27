@@ -16,4 +16,11 @@ class GroceriesController < ApplicationController
 
     redirect_to '/'
   end
+
+  def destroy
+    @grocery = Grocery.find(params[:id])
+    @grocery.destroy
+
+    redirect_to '/'
+  end
 end
