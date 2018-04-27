@@ -1,0 +1,9 @@
+<h3> My Grocery List </h3>
+
+<ul class="collection">
+<% @groceries.each do |grocery| %>
+  <li class="collection-item"><%= grocery.name %> - <%= grocery.quantity %></li>
+<% end %>
+</ul>
+
+<%= link_to 'New', new_grocery_path %>

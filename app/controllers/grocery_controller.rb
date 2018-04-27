@@ -1,2 +1,0 @@
-class GroceryController < ApplicationController
-end

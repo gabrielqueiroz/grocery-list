@@ -1,6 +1,6 @@
 <h3> Add item to Grocery List </h3>
 
-<%= form_with scope: :grocery do |form| %>
+<%= form_with scope: :grocery, url: groceries_path do |form| %>
   <div class="row">
     <div class="col s10">
       <p>
@@ -12,7 +12,7 @@
     <div class="col s2">
       <p>
         <%= form.label :quantity %><br>
-        <%= form.text_field :quantity %>
+        <%= form.number_field :quantity %>
       </p>
     </div>
 
