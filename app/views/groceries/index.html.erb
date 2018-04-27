@@ -7,9 +7,11 @@
   <% @groceries.each do |grocery| %>
     <li class="collection-item">
       <%= grocery.name %> - <%= grocery.quantity %>
-      <%= link_to 'Destroy', grocery_path(grocery), method: :delete, data: { confirm: 'Remove item from grocery list?' }, class: 'right' %>
+      <%= link_to grocery_path(grocery), method: :delete, data: { confirm: 'Remove item from grocery list?' }, class: 'right' do %>
+        <i class="material-icons">delete</i>
+      <% end %>
     </li>
   <% end %>
 </ul>
 
-<%= link_to 'New', new_grocery_path %>
+<%= link_to 'Add item', new_grocery_path, class: "waves-effect waves-light btn white-text right" %>
