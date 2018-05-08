@@ -86,6 +86,7 @@ GEM
     ffi (1.9.23)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    hiredis (0.6.1)
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     io-like (0.3.0)
@@ -151,6 +152,10 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    rcurtain (0.0.7)
+      hiredis
+      redis (~> 3.2)
+    redis (3.3.5)
     rspec-core (3.7.1)
       rspec-support (~> 3.7.0)
     rspec-expectations (3.7.0)
@@ -234,6 +239,7 @@ DEPENDENCIES
   materialize-sass (~> 1.0.0.beta)
   puma (~> 3.11)
   rails (~> 5.2.0)
+  rcurtain
   rspec-rails (~> 3.7)
   sass-rails (~> 5.0)
   selenium-webdriver

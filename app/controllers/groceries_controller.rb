@@ -2,6 +2,7 @@ class GroceriesController < ApplicationController
 
   def index
     @groceries = Grocery.all
+    @new_button = feature_open?('grocery-button')
 
     respond_to do |format|
       format.html

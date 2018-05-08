@@ -4,3 +4,16 @@ services:
     build: .
     ports:
       - "3000:3000"
+    depends_on:
+      - redis
+  ifman:
+    image: queirozgabriel/ifman
+    ports:
+      - "5000:3000"
+    depends_on:
+      - redis
+  redis:
+    image: redis:alpine
+    command: redis-server --requirepass redis
+    ports:
+      - "6379:6379"

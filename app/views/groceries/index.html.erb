@@ -1,12 +1,13 @@
 <h3> My Grocery List </h3>
 
+<% if @groceries.blank? %>
+  <h3> Start adding items to your grocery </h3>
+<% end %>
+
 <ul class="collection">
-  <% if @groceries.blank? %>
-    <li class="collection-item"> Start adding items to your grocery </li>
-  <% end %>
   <% @groceries.each do |grocery| %>
     <li class="collection-item">
-      <%= grocery.name %> - <%= grocery.quantity %>
+      <%= grocery.quantity %> - <%= grocery.name %>
       <%= link_to grocery_path(grocery), method: :delete, data: { confirm: 'Remove item from grocery list?' }, class: 'right' do %>
         <i class="material-icons">delete</i>
       <% end %>
@@ -14,4 +15,8 @@
   <% end %>
 </ul>
 
-<%= link_to 'Add item', new_grocery_path, class: "waves-effect waves-light btn white-text right" %>
+<% if @new_button %>
+  <%= link_to ("<i class=\"material-icons\">add</i>").html_safe, new_grocery_path, class: "btn-floating waves-effect waves-light right-align right" %>
+<% else %>
+  <%= link_to 'Add item', new_grocery_path, class: "waves-effect waves-light btn white-text right" %>
+<% end %>
