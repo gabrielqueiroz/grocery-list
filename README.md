@@ -1,4 +1,4 @@
-<img width="324" alt="screen shot 2018-05-09 at 9 10 55 am" src="https://user-images.githubusercontent.com/4305837/39813969-f1c38d30-5368-11e8-8c58-2d59c5168aac.png">
+<img width="317" alt="screen shot 2018-05-09 at 9 25 44 am" src="https://user-images.githubusercontent.com/4305837/39814511-011baf22-536b-11e8-9932-6d6c034cd9a7.png">
 
 # About
 
