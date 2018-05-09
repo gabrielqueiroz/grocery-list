@@ -14,11 +14,11 @@ Examples:
 
 - Default application layout:
 
-<img width="425" alt="screen shot 2018-05-09 at 9 16 31 am" src="https://user-images.githubusercontent.com/4305837/39814198-c97683d6-5369-11e8-9c5f-e910f9a9e2ac.png">
+<img width="434" alt="screen shot 2018-05-09 at 11 07 25 am" src="https://user-images.githubusercontent.com/4305837/39819812-caaeaaa6-537a-11e8-9ed8-bb9287bf67a9.png">
 
 - With feature `grocery-button` enable:
 
-<img width="422" alt="screen shot 2018-05-09 at 9 17 07 am" src="https://user-images.githubusercontent.com/4305837/39814201-cc5825f0-5369-11e8-8e05-cdc732b1b374.png">
+<img width="435" alt="screen shot 2018-05-09 at 11 17 11 am" src="https://user-images.githubusercontent.com/4305837/39819826-d454ac18-537a-11e8-95c6-44aa8500a5c9.png">
 
 # Running project
 
