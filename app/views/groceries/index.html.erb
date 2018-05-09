@@ -1,7 +1,5 @@
-<h3> My Grocery List </h3>
-
 <% if @groceries.blank? %>
-  <h3> Start adding items to your grocery </h3>
+  <h5> Start adding items to your grocery </h5>
 <% end %>
 
 <ul class="collection">
@@ -16,7 +14,7 @@
 </ul>
 
 <% if @new_button %>
-  <%= link_to ("<i class=\"material-icons\">add</i>").html_safe, new_grocery_path, class: "btn-floating waves-effect waves-light right-align right" %>
+  <%= link_to ("<i class=\"material-icons\">add</i>").html_safe, new_grocery_path, class: "btn-floating waves-effect waves-light right-align right blue" %>
 <% else %>
-  <%= link_to 'Add item', new_grocery_path, class: "waves-effect waves-light btn white-text right" %>
+  <%= link_to 'Add item', new_grocery_path, class: "waves-effect waves-light btn white-text right blue" %>
 <% end %>
